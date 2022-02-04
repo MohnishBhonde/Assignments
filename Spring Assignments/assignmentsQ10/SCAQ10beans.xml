@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+    <bean id="contextAware" class="spring.assignmentsQ10.ContextAwareExample">
+        <property name="place" value="Nagpur"/>
+        <property name="demo" ref="SCAQ10"/>
+    </bean>
+    <bean id="contextAware1" class="spring.assignmentsQ10.ContextAwareExample">
+        <property name="place" value="Nagpur"/>
+        <property name="demo" ref="SCAQ10"/>
+    </bean>
+
+    <bean id="Demo" class="spring.assignmentsQ10.SCAQ10" scope="prototype">
+        <property name="x" value="15"/>
+        <property name="y" value="60"/>
+    </bean>
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="bankAccount1" class="spring.assignments.BankAccount">
+        <constructor-arg type = "long" value="5697"/>
+        <constructor-arg value="Mohnish"/>
+        <constructor-arg value="Savings"/>
+        <constructor-arg type="double" value="56000"/>
+
+    </bean>
+    <bean id="bankAccount2" class="spring.assignments.BankAccount">
+        <constructor-arg type = "long" value="3654"/>
+        <constructor-arg value="Axel"/>
+        <constructor-arg value="Savings"/>
+        <constructor-arg type="double" value="654230"/>
+
+    </bean>
+
+    <bean id="BankRepo" class="spring.assignments.BankAccountepositoryImpl" autowire="constructor">
+
+    </bean>
+
+
+    <bean id="controller" class="spring.assignments.BankAccountController">
+
+    </bean>
+
+
+</beans>
