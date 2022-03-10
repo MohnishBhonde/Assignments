@@ -1,0 +1,64 @@
+.navbar{background-color: rgb(23, 165, 158);
+    border-radius: 35px;}
+    
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 4px 4px
+    ;
+
+    margin: 3px 25px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li a{
+    padding: 4px 4px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.wall{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.products {
+    background-color: #4CAF50;
+    margin: 2px -1px;
+}
+
+@media screen and (max-width: 600px) {
+    .wall {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.bat {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 56px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 10%;
+}
+
+.bat button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(226, 19, 19);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.bat button:hover {
+    background-color: aqua;
+}
+body{
+    background-color: azure;
+}
